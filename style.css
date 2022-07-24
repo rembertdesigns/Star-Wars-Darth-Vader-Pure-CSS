@@ -1,0 +1,442 @@
+html,
+body{
+  width: 100%;
+  height: 100%;
+  background: gray;
+  margin: 0;
+  background-size: 80vmin;
+}
+*,
+:before,
+:after{
+  position: absolute;
+  content: '';
+  box-sizing: border-box;
+}
+.darth{
+  font-size: 2.7vmin;
+  width: 28em;
+  height: 31em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.helmet .dome{
+  left: 4.5em;
+  top: 0.3em;
+  width: 19em;
+  height: 18em;
+  background: black;
+  border-top-left-radius: 40% 50%;
+  border-top-right-radius: 40% 50%;
+}
+.helmet .dome:before{
+  width: 80%;
+  height: 40%;
+  left: 10%;
+  top: 0.5em;
+  border-top-left-radius: 50% 70%;
+  border-top-right-radius: 50% 70%;
+  border-bottom-left-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30%;
+  background: #171717;
+}
+.helmet .dome:after{
+  width: 2em;
+  height: 3em;
+  background: #262626;
+  border-radius: 50%;
+  right: 4em;
+  top: 2em;
+  transform: rotate(-45deg);
+}
+.helmet .hood{
+  width: 28em;
+  height: 17em;
+  left: 0em;
+  top: 9em;
+}
+.helmet .hood:after{
+  width: 28em;
+  height: 4em;
+  bottom: 0;
+  left: 0;
+  background: black;
+  z-index: 2;
+  border-top-left-radius: 50% 60%;
+  border-top-right-radius: 50% 60%;
+  border-bottom-right-radius: 50% 40%;
+  border-bottom-left-radius: 50% 40%;
+}
+.helmet .hood .left{
+  width: 9.5em;
+  height: 15.4em;
+  background: black;
+  top: 0;
+  left: 0em;
+  transform-origin: 0 100%;
+  transform: skewX(-19deg);
+  overflow: hidden;
+}
+.helmet .hood .left:before{
+  width: 11em;
+  height: 17em;
+  background: #262626;
+  border-top-left-radius: 4em 3em;
+  border-top-right-radius: 7em 7em;
+}
+.helmet .hood .left:after{
+  width: 10em;
+  height: 16em;
+  top: 2em;
+  left: 1.5em;
+  background: black;
+  border-top-left-radius: 5em;
+  border-top-right-radius: 7em 8em;
+  transform-origin: 50% 0;
+  transform: skewX(3deg);
+}
+.helmet .hood .right{
+  width: 9.5em;
+  height: 15.4em;
+  background: black;
+  top: 0;
+  right: 0em;
+  transform-origin: 100% 100%;
+  transform: skewX(19deg);
+  overflow: hidden;
+}
+.helmet .hood .right:before{
+  width: 11em;
+  height: 17em;
+  right: 0;
+  background: #262626;
+  border-top-right-radius: 4em 3em;
+  border-top-left-radius: 7em 7em;
+}
+.helmet .hood .right:after{
+  width: 10em;
+  height: 16em;
+  top: 2em;
+  right: 1.5em;
+  background: black;
+  border-top-right-radius: 5em;
+  border-top-left-radius: 7em 8em;
+  transform-origin: 50% 0;
+  transform: skewX(-3deg);
+}
+.helmet .ridge{
+  width: 13em;
+  height: 13em;
+  transform: scaleY(0.8) rotate(45deg);
+  left: 7.5em;
+  top: -1em;
+  border-radius: 0 0 0.4em 0;
+  overflow: hidden;
+}
+.helmet .ridge:after{
+  width: 2em;
+  height: 19em;
+  left: 0.2em;
+  top: 1.6em;
+  background: #262626;
+  transform-origin: 0 0;
+  transform: rotate(-45deg) translateY(1em);
+  border-radius: 0.5em 0.5em 0 0;
+  box-shadow: 0 0.6em 0 0.4em black;
+}
+.mask{
+  width: 16em;
+  height: 20em;
+  top: 11em;
+  left: 6em;
+  z-index: 2;
+}
+.mask .neck{
+  width: 14em;
+  height: 11em;
+  background: black;
+  bottom: 0;
+  left: 1em;
+  border-radius: 50%;
+  z-index: -1;
+}
+.mask .eyes{
+  width: 16em;
+  height: 5em;
+}
+.mask .eyes .left{
+  background: #171717;
+  background: radial-gradient(12em at 134% 67%, #171717 45%, #262626 45%, #262626 53%, #171717 53%);
+  left: 0.4em;
+  top: -1em;
+  width: 6.8em;
+  height: 4.3em;
+  transform-origin: 0 100%;
+  transform: scaleX(0.95) rotate(20deg);
+  border-top-left-radius: 5em 4.5em;
+  border-top-right-radius: 3em 2em;
+  border-bottom-right-radius: 6em 2.4em;
+  border-bottom-left-radius: 0.5em 0.5em;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-bottom: 0.5em solid #333333;
+}
+.mask .eyes .left:after{
+  width: 7em;
+  height: 7em;
+  background: #262626;
+  background: radial-gradient(12em at 114% 37%, #262626 45%, #4d4d4d 45%, #4d4d4d 53%, #262626 53%);
+  border-radius: 50%;
+  left: 1em;
+  top: 0.5em;
+  z-index: -1;
+}
+.mask .eyes .left:before{
+  width: 2em;
+  height: 5em;
+  background: black;
+  right: -1.7em;
+  top: -0.5em;
+  transform: rotate(-20deg);
+}
+.mask .eyes .right{
+  background: #171717;
+  background: radial-gradient(12em at 97% 156%, #171717 38%, #262626 38%, #262626 40%, #171717 40%, #171717 45%, #262626 45%, #262626 53%, #171717 53%);
+  right: 0.4em;
+  top: -1em;
+  width: 6.8em;
+  height: 4.3em;
+  transform-origin: 100% 100%;
+  transform: scaleX(0.95) rotate(-20deg);
+  border-top-right-radius: 5em 4.5em;
+  border-top-left-radius: 3em 2em;
+  border-bottom-left-radius: 6em 2.4em;
+  border-bottom-right-radius: 0.5em 0.5em;
+  overflow: hidden;
+  border-bottom: 0.5em solid #333333;
+  box-sizing: content-box;
+}
+.mask .eyes .right:before{
+  width: 2em;
+  height: 5em;
+  background: black;
+  left: -1.7em;
+  top: -0.5em;
+  transform: rotate(20deg);
+}
+.mask .eyes .right:after{
+  width: 7em;
+  height: 7em;
+  background: #262626;
+  background: radial-gradient(12em at 124% 36%, #262626 38%, #4d4d4d 38%, #4d4d4d 40%, #262626 40%, #262626 45%, #4d4d4d 45%, #4d4d4d 53%, #262626 53%);
+  border-radius: 50%;
+  right: 1em;
+  top: 0.5em;
+  z-index: -1;
+  transform: rotate(40deg);
+}
+.mask .eyes:after{
+  background: #262626;
+  width: 1.3em;
+  height: 0.3em;
+  left: 50%;
+  top: 2em;
+  transform: translateX(-50%);
+  box-shadow: 0 1.4em 0 -0.08em #262626, 0 0.75em 0 -0.05em #262626;
+}
+.mask .cheeks{
+  background: black;
+  left: 1em;
+  top: 6em;
+  width: 14em;
+  height: 5em;
+  overflow: hidden;
+}
+.mask .cheeks:before{
+  width: 3.6em;
+  height: 3.6em;
+  background: black;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -0.1em;
+  z-index: 1;
+}
+.mask .cheeks:after{
+  width: 11em;
+  height: 11em;
+  background: black;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.2em;
+}
+.mask .cheeks .left{
+  width: 5em;
+  height: 4.3em;
+  background: #333333;
+  left: 0.75em;
+  top: 0.7em;
+  transform-origin: 0 0;
+  transform: skewX(17deg);
+}
+.mask .cheeks .left:after{
+  width: 5em;
+  height: 0.5em;
+  top: -0.5em;
+  background: inherit;
+  border-top-right-radius: 2em 0.5em;
+  border-top-left-radius: 3em 0em;
+  transform-origin: 100% 100%;
+  transform: rotate(-5deg);
+}
+.mask .cheeks .right{
+  width: 5em;
+  height: 4.3em;
+  background: #333333;
+  right: 0.75em;
+  top: 0.7em;
+  transform-origin: 100% 0;
+  transform: skewX(-17deg);
+}
+.mask .cheeks .right:after{
+  width: 5em;
+  height: 0.5em;
+  top: -0.5em;
+  background: inherit;
+  border-top-left-radius: 2em 0.5em;
+  border-top-right-radius: 3em 0em;
+  transform-origin: 0 100%;
+  transform: rotate(5deg);
+}
+.mask .snout{
+  z-index: 2;
+  width: 3em;
+  height: 7em;
+  background: #262626;
+  top: 6.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1.5em 1.5em 0 0;
+}
+.mask .snout:before{
+  width: 0.7em;
+  height: 5em;
+  top: 2em;
+  left: 0.4em;
+  background: #262626;
+  box-shadow: 1.5em 0 0 #262626;
+  z-index: 2;
+}
+.mask .snout:after{
+  width: 0.7em;
+  height: 3em;
+  top: 3.77em;
+  left: -1em;
+  background: #262626;
+  box-shadow: 4.3em 0 0 #262626;
+  z-index: 2;
+}
+.mask .snout .left{
+  width: 3em;
+  height: 5em;
+  left: 0;
+  top: 2em;
+  background: inherit;
+  transform-origin: 100% 0;
+  transform: skewX(-31deg);
+  border-bottom-left-radius: 0.5em;
+}
+.mask .snout .right{
+  width: 3em;
+  height: 5em;
+  right: 0;
+  top: 2em;
+  background: inherit;
+  transform-origin: 0 0;
+  transform: skewX(31deg);
+  border-bottom-right-radius: 0.5em;
+}
+.mask .snout .vent{
+  width: 3.6em;
+  height: 2.7em;
+  bottom: 0.6em;
+  left: -0.3em;
+  background: black;
+  border-radius: 50% 50% 0 0;
+}
+.mask .snout .vent .left{
+  width: 1.7em;
+  height: 3.5em;
+  left: 0.6em;
+  bottom: 0;
+  top: auto;
+  background: black;
+  border-bottom-left-radius: 0.25em;
+}
+.mask .snout .vent .right{
+  width: 1.7em;
+  height: 3.5em;
+  right: 0.6em;
+  bottom: 0;
+  top: auto;
+  background: black;
+  border-bottom-right-radius: 0.25em;
+}
+.mask .snout .nose{
+  width: 2em;
+  height: 1.8em;
+  background: #878787;
+  left: 0.5em;
+  top: 0.5em;
+  z-index: 2;
+  border-radius: 50% 50% 0.5em 0.4em;
+  box-shadow: inset -0.1em 0.4em 0 #6e6e6e;
+}
+.mask .snout .nose:after{
+  width: 0.75em;
+  height: 1em;
+  background: black;
+  top: 1.8em;
+  left: 0.6em;
+}
+.mask .snout .tusks{
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #6e6e6e;
+  left: -3.9em;
+  bottom: -0.2em;
+  box-shadow: 9.8em 0 0 #6e6e6e;
+}
+.mask .snout .tusks:after{
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 30%;
+  border-radius: 50%;
+  background: #878787;
+  box-shadow: 9.8em 0 0 #878787;
+}
+.mask .chin{
+  width: 8.4em;
+  height: 3em;
+  top: 13.4em;
+  left: 3.8em;
+  overflow: hidden;
+}
+.mask .chin:before{
+  width: 8.3em;
+  height: 8em;
+  bottom: 0.3em;
+  border-bottom-right-radius: 1.5em;
+  transform: scaleY(0.8) rotate(45deg);
+}
+.mask .chin .vent{
+  border-top: 1.5em solid #171717;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  top: 0.4em;
+  left: 2.3em;
+}
